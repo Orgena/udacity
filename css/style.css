@@ -1,0 +1,340 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;    
+    margin: 0;
+    direction: rtl;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 0 15px;
+    overflow: auto;/*لجعل الكونتينر يلتفت حول العنصر*/;
+}
+
+#header{
+    width: 100%;
+    min-width: 980px;
+    box-shadow: 0 0 35px #2f2b2be0;
+    position: fixed;/*مكانه ثابت*/
+    top: 0;
+    background-color: #fff;
+    height: auto;
+    z-index: 100
+}
+
+.float-left{float: left}
+
+.float-right{float: right;}
+
+.float-right img{
+    width: 50%
+}
+
+.float-left ul{
+    list-style-type: none; /*ازالة النقاط*/
+    margin: 0; /*ازالة الهوامش الخارجية*/
+    padding: 0; /*ازالة الهوامش الداخلية*/
+    overflow: hidden; /*اخفاء العناصر التي قد تخرج عن القائمة*/
+}
+
+.float-left li{
+    float: right;
+    list-style: none
+}
+
+.float-left a{
+    display: inline-block;
+    padding: 17px 15px;
+	font-size: 14px;
+	color: #333;
+    text-decoration: none;
+    border-bottom: 2px solid #fff;
+    transition: all 0.3s;
+}
+
+.float-left li a:hover{
+    border-bottom: 2px solid #11b7e6;
+    color: #00aaf6;
+}
+.dropdown {
+    text-align: right;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 230px;
+    box-shadow: 0px 8px 16px 0px #2f2b2be0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 6px 5px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 2px solid #fff;
+}
+
+.dropdown-content a:hover{
+    border-bottom: 2px solid #11b7e6;
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content{display: block}
+
+.clear-fix{clear: both}
+
+#main{
+    margin-top: 60px;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(../image/udacity1ed.2076c354169ffbc667eb.jpg);
+    width: 100%;
+	height: 500px;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.intro{
+    margin: 100px 0;
+    color: #fff
+}
+
+.intro p{
+    margin-bottom: 50px;
+    font-size: 18px
+}
+
+.intro span{
+    border: 1px solid #fff;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.btn-2{
+    margin: 50px 0;
+}
+button{
+    font-size: 22px;
+    font-family: 'Cairo', sans-serif;
+    padding: 3px 30px;
+    background: #11b7e6;
+    color: #fff;
+    border: none;
+    margin: 0 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn-2 button:hover{
+	background: #029fcb;
+}	
+.btn-2 button:active{
+	background: #029fcb;
+}	
+
+h2{
+    margin-bottom: 0;
+    margin-top: 50px;
+    text-align: center
+}
+hr{
+    border: 1px solid #11b7e6;
+    width: 7%
+}
+.about{
+    text-align: center
+}
+.about img{
+    margin: 30px
+}
+.about p{
+    margin: 0px 20% 
+}
+.about ul{
+    text-align: right;
+    margin: 50px 0
+}
+.about ul li{
+    list-style: circle;
+    margin-bottom: 20px
+}
+.about a{
+    color: #11b7e6;
+    cursor: pointer
+}
+
+
+
+
+
+.vedios{
+    background-image:url(../image/software-sec-bg.a6e1a4fcb82f73d68962.jpg);
+    width: 100%;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    margin: 50px 0;
+    padding: 50px 0;
+}
+.vedios .container{
+    display: flex;
+    flex-direction: column
+}
+.vedios span, .vedios-right span{
+    color:#11b7e6;
+    font-size: 40px;
+}
+.vedios .container h2, .vedios-right .container h2{
+    text-align: right;
+    margin: 0;
+    font-size: 38px;
+    line-height: 1.5
+}
+
+.vedio{
+    flex: 1;
+}
+.vedio iframe{
+    width: 100%;
+	height: 360px;
+	border: none;
+}
+.vedios .container .content{
+    flex: 1;
+    margin-left: 20px
+}
+
+.underline::after{
+	content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+	background-color:#11b7e6;
+}
+
+.vedios-right .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.vedios-right .container .content{
+    flex: 1;/*كل العناصر التي بداخل هذا يجب ان يكون حجمها متساوي وتتقاسم كل المساحة المتاحة في الاب*/
+    margin-right: 20px
+}
+
+@media(min-width:769px){
+    
+    
+    .vedios .container{
+        display: flex;
+        flex-direction: row-reverse
+    }
+    
+    .vedios-right .container{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+
+.center{background: #eee; padding: 70px 0; margin: 50px 0}
+.center p{text-align: center}
+.com{
+    display: flex;
+}
+ul li{list-style: circle}
+.com ul{margin-left: 0px;padding-right: 20px;}
+.com .studient ul li{padding-left: 30px}
+
+
+
+.accordion{
+  position: relative;
+}
+
+.accordion label{
+    padding: 10px 30px;
+    background-color: #fafafa;
+    border:1px solid #eee;
+    font-size: 14px;
+    color:#333;
+    display: block;
+    cursor: pointer;
+}
+.accordion .accordion-content {
+    border:1px solid #eee;
+    border-top:none;
+    overflow: hidden;
+    display: none; /*مخفي*/
+}
+.accordion p{
+	margin: 15px;
+	font-size: 14px;
+    color:#333;
+}
+.accordion input[type=checkbox]{
+    position: absolute;
+    display: none; /*هنا تم إخفائة*/
+}
+.accordion input[type=checkbox]:checked ~ .accordion-content {
+  display: block;
+}
+
+.accordion label::after {
+  content: "+";
+  position: absolute;
+  top: 9px; /*هنا قمت بالتغيير*/
+  right: 15px;  /*هنا قمت بالتغيير*/
+  display: block;
+  width: 10px;
+  height: 10px;
+}
+.accordion input[type=checkbox]:checked ~ label::after {
+  content: "-";
+}
+.ques .container h2{text-align: right}
+.ques{margin-bottom: 80px}
+
+
+#main-footer{
+	padding: 100px 0;
+	text-align: center;
+	background: #1c1c1c;
+    color: #fff;
+    background: #1c1c1c url(../image/bd%20footer.png) center 75% no-repeat ;
+}
+
+#main-footer p{
+	color: #bbb;
+	font-size: 14px;
+	margin: 6px 0;
+}
+
+#main-footer p a{
+	color: #bbb;
+	text-decoration: none;
+}
+
+
+#sub-footer{
+	padding: 2px 0;
+	background: #131313;
+	color: #ccc;
+	text-align: center;
+	border-top: 1px solid #323232;
+}
+#sub-footer p{
+	padding: 0;
+	font-size: 14px;
+}
+#sub-footer p a{
+	color: #bbb;
+	text-decoration: none;
+}
